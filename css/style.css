@@ -817,7 +817,7 @@ tr td:last-child {
 	display: inline-block;
 	overflow: hidden;
 	width: 100%;
-	margin: 0 0 0 60px;
+	margin: 0 5px 0 5px;
 }
 .price__contact-info label {
 	display: block;
@@ -830,7 +830,7 @@ tr td:last-child {
 .price__contact-info input {
 	display: inline-block;
 	overflow: hidden;
-	width: 430px;
+	width: 450px;
 	height: 26px;
 	border: 1px solid #333335;
 	background: rgba(243, 234, 234, 0.07);
@@ -841,7 +841,7 @@ tr td:last-child {
 }
 .price__contact-info select {
 	display: block;
-	width: 230px;
+	width: 450px;
 	height: 26px;
 	font-size: 16px;
 	border: 1px solid #333335;
@@ -854,7 +854,7 @@ tr td:last-child {
 	padding: 0 10px 1px;
 }
 .price__contact-info textarea {
-	width: 430px;
+	width: 450px;
 	height: 68px;
 	display: inline-block;
 	overflow: hidden;
@@ -867,7 +867,7 @@ tr td:last-child {
 	resize: none;
 }
 .price__contact-info textarea.comment {
-	width: 430px;
+	width: 450px;
 	height: 130px;
 }
 ::placeholder {
@@ -947,7 +947,7 @@ tr td:last-child {
 		font-size: 20px;
 	}
 	.price__right {
-		width: 500px;
+		width: 600px;
 	}
 	.price__contact-info input {
 		width: 330px;
