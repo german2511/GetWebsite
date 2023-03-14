@@ -1,3 +1,13 @@
+/*
+Theme Name: Get Website
+Author: Герман
+Version: 1.0
+Description: Тема для сайту GetWebsite
+License: MIT License
+License URI: http://opensource.org/licenses/MIT
+Text Domain: getwebsite
+*/
+
 *,
 *::before,
 *::after {
@@ -371,7 +381,7 @@ body {
 	position: absolute;
 	max-width: 900px;
 	padding: 30px;
-	top: 360px;
+	top: 260px;
 	left: 200px;
 	background-color: rgba(124, 124, 124, .4);
 	z-index: 2;
@@ -432,7 +442,7 @@ picture {
 @media (max-width:1200px) {
 	.first-view__body {
 		padding: 30px;
-		top: 360px;
+		top: 260px;
 		left: 100px;
 		background-color: rgba(26, 25, 25, 0.4);
 	}
@@ -443,7 +453,7 @@ picture {
 }
 @media (max-width:991px) {
 	.first-view__body {
-		top: 330px;
+		top: 230px;
 		left: 200px;
 		background-color: rgba(5, 5, 5, 0.4);
 	}
@@ -473,7 +483,7 @@ picture {
 @media (max-width:650px) {
 	.first-view__body {
 		max-width: 500px;
-		top: 300px;
+		top: 200px;
 		left: 75px;
 	}
 }
@@ -490,15 +500,14 @@ picture {
 @media (max-width:530px) {
 	.first-view__body {
 		max-width: 400px;
-		top: 300px;
+		top: 200px;
 		left: 65px;
 	}
 }
 @media (max-width:500px) {
 	.first-view__body {
 		max-width: 350px;
-		top: 300px;
-		left: 75px;
+		margin: 0 auto;
 	}
 }
 @media (max-width:460px) {
@@ -518,8 +527,7 @@ picture {
 }
 @media (max-width:375px) {
 	.first-view__body {
-		top: 230px;
-		left: 40px;
+		margin: 0 auto;
 		max-width: 300px;
 		background-color: rgba(82, 81, 81, 0.4);
 	}
@@ -684,6 +692,22 @@ picture {
 	text-align: center;
 	text-decoration: underline;
 	margin-top: 15px;
+	line-height: 138%;
+}
+@media (max-width:991px) {
+	.wordpress__bottom {
+		font-size: 20px;
+	}
+}
+@media (max-width:650px) {
+	.wordpress__bottom {
+		font-size: 18px;
+	}
+}
+@media (max-width:450px) {
+	.wordpress__bottom {
+		font-size: 16px;
+	}
 }
 /* _______PRICE___________ */
 .price {
@@ -782,6 +806,7 @@ tr td:last-child {
 	font-size: 18px;
 	font-weight: normal;
 	line-height: 138%;
+	text-align: justify;
 }
 .price__about span {
 	font-weight: 700;
@@ -815,7 +840,6 @@ tr td:last-child {
 .price__contact-info {
 	position: relative;
 	display: inline-block;
-	overflow: hidden;
 	width: 100%;
 	margin: 0 5px 0 5px;
 }
@@ -830,7 +854,7 @@ tr td:last-child {
 .price__contact-info input {
 	display: inline-block;
 	overflow: hidden;
-	width: 450px;
+	width: 546px;
 	height: 26px;
 	border: 1px solid #333335;
 	background: rgba(243, 234, 234, 0.07);
@@ -841,7 +865,7 @@ tr td:last-child {
 }
 .price__contact-info select {
 	display: block;
-	width: 450px;
+	width: 546px;
 	height: 26px;
 	font-size: 16px;
 	border: 1px solid #333335;
@@ -854,7 +878,7 @@ tr td:last-child {
 	padding: 0 10px 1px;
 }
 .price__contact-info textarea {
-	width: 450px;
+	width: 546px;
 	height: 68px;
 	display: inline-block;
 	overflow: hidden;
@@ -867,7 +891,7 @@ tr td:last-child {
 	resize: none;
 }
 .price__contact-info textarea.comment {
-	width: 450px;
+	width: 546px;
 	height: 130px;
 }
 ::placeholder {
@@ -898,7 +922,7 @@ tr td:last-child {
 	background-color:#6b6868;
 	color: #f1d256;
 }
-@media (max-width:991px) {
+@media (max-width:1090px) {
 	.price__body {
 		flex-wrap: wrap;
 		flex-direction: column;
@@ -910,7 +934,10 @@ tr td:last-child {
 	}
 	.price h3 {
 		font-size: 30px;
-	} 
+	}
+	.price__title {
+		font-size: 20px;
+	}
 }
 @media (max-width:730px) {
 	.price h3 {
@@ -922,7 +949,7 @@ tr td:last-child {
 	table {
 		font-size: 16px;
 	}
-		.price h3 {
+	.price h3 {
 		font-size: 30px;
 	} 
 	table {
@@ -947,16 +974,16 @@ tr td:last-child {
 		font-size: 20px;
 	}
 	.price__right {
-		width: 600px;
+		width: 470px;
 	}
 	.price__contact-info input {
-		width: 330px;
+		width: 415px;
 	}
 	.price__contact-info textarea {
-		width: 330px;
+		width: 415px;
 	}
 	.price__contact-info textarea.comment {
-		width: 330px;
+		width: 415px;
 	}
 }
 @media (max-width:550px) {
@@ -966,9 +993,64 @@ tr td:last-child {
 	.price__right {
 		width: 450px;
 	}
+	.price__contact-info {
+		margin: 0 0 0 5px;
+	}
+	.price__contact-info input {
+		width: 395px;
+	}
+
+	.price__contact-info textarea {
+		width: 395px;
+	}
+
+	.price__contact-info textarea.comment {
+		width: 395px;
+	}
+	.price__title {
+		font-size: 18px;
+	}
+}
+@media (max-width:500px) {
+	.price__right {
+		width: 400px;
+	}
 
 	.price__contact-info {
-		margin: 0 0 0 30px;
+		margin: 0 0 0 5px;
+	}
+
+	.price__contact-info input {
+		width: 345px;
+	}
+
+	.price__contact-info textarea {
+		width: 345px;
+	}
+
+	.price__contact-info textarea.comment {
+		width: 345px;
+	}
+}
+@media (max-width:440px) {
+	.price__right {
+		width: 350px;
+	}
+
+	.price__contact-info {
+		margin: 0 0 0 5px;
+	}
+
+	.price__contact-info input {
+		width: 290px;
+	}
+
+	.price__contact-info textarea {
+		width: 290px;
+	}
+
+	.price__contact-info textarea.comment {
+		width: 290px;
 	}
 }
 @media (max-width:375px) {
@@ -976,19 +1058,19 @@ tr td:last-child {
 		max-width: 250px;
 	}
 	.price__right {
-		width: 250px;
+		width: 320px;
 	}
 	.price__title {
 		font-size: 14px;
 	}
 	.price__contact-info input {
-		width: 170px;
+		width: 250px;
 	}
 	.price__contact-info textarea {
-		width: 170px;
+		width: 250px;
 	}
 	.price__contact-info textarea.comment {
-		width: 170px;
+		width: 250px;
 	}
 	.price__contact-info {
 		margin: 0 0 0 15px;
@@ -1006,7 +1088,6 @@ tr td:last-child {
 		font-size: 14px;
 		border-radius: 8px;
 		line-height: 28px;
-		margin-left: 20px;
 	}
 }
 /* _______FOOTER__________ */
