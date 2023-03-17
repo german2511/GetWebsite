@@ -95,6 +95,9 @@ body {
 		max-width: none;
 	}
 }
+.grecaptcha-badge {
+	z-index: 100;
+}
 /* ________HEADER________ */
 .header {
 	position: fixed;
